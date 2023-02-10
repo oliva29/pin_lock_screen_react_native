@@ -185,7 +185,7 @@ export default function Pin({ backgroundColorStatusBar }){
  
 Pin.defaultProps = {
     visible: true,
-    backgroundColorStatusBar: '#2c26ac'
+    backgroundColorStatusBar: '#155D34'
 }
 
 Pin.propTypes = {
