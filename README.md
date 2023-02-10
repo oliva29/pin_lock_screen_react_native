@@ -1,10 +1,23 @@
 
 
 
-### Descripción 
+# Descripción 
 Pantalla PIN de bloqueo para react native.Realizada en expo. / PIN lock screen for react native. Made at expo.
 
 Existe una rama llamada **web** que no contiene **react-native-svg** y es compatible con web.
+
+# Iniciar
+    npm i
+
+Para Android:
+    npm run android
+    
+Para Ios:
+    npm run ios
+    
+Para web: Moverse a la rama web y ejecutar:
+    npm i
+    npm run web
 
 # Capturas
  
