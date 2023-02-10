@@ -10,12 +10,15 @@ Existe una rama llamada **web** que no contiene **react-native-svg** y es compat
     npm i
 
 Para Android:
+
     npm run android
     
 Para Ios:
+
     npm run ios
     
 Para web: Moverse a la rama web y ejecutar:
+
     npm i
     npm run web
 
