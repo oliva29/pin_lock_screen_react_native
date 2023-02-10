@@ -1,11 +1,10 @@
 import React from 'react'; 
 import PropTypes from "prop-types";
-import { color } from '@style/variables'
-import Image from '@components/image';
-import { TouchableOpacity } from 'react-native';
+import { color } from '@style/variables' 
+import { TouchableOpacity, Image } from 'react-native';
 import { Text } from 'react-native';
 
-export default function Button({ image, widthIcon, heightIcon, onPress, backgroundColor, borderRadius, style, iconColor, children }) {
+export default function Button({ image, widthIcon, heightIcon, onPress, backgroundColor, borderRadius, style,  children }) {
     let butonStyle  = {  
         backgroundColor: backgroundColor, 
         borderRadius: borderRadius,
@@ -22,7 +21,11 @@ export default function Button({ image, widthIcon, heightIcon, onPress, backgrou
             style={butonStyle}
             onPress={onPress}>
                <Text style={{fontSize: 20}}>{children}</Text>
-            { image ? <Image xml={image} width={widthIcon} height={heightIcon} style={{color: color[iconColor]}} /> : null }
+            { image ? <Image source={image} 
+                style={{ 
+                    width: widthIcon,
+                    height: heightIcon
+                }} /> : null }
         </TouchableOpacity>
     )
 }
@@ -32,8 +35,8 @@ Button.defaultProps = {
     backgroundColor: color.gray,  
     font: 'semiBold',
     onPress: ()=>{},
-    widthIcon: "20",
-    heightIcon: "20",
+    widthIcon:  20 ,
+    heightIcon:  20 ,
     padding: 25,
     borderRadius: 500,
     iconColor: 'black'

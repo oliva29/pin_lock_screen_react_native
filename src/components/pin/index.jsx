@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Image, View, StatusBar, Platform, FlatList, Text } from 'react-native';
 import PropTypes from "prop-types";
-import asterisk from '@assets/asterisk'; 
+import asterisk from '@assets/asterisk.png'; 
 import Button from '@components/button';
 import styles from './style';
 import Bg from '@assets/bg.png';
-import trash from '@assets/trash';
-import backspace from '@assets/backspace';
+import trash from '@assets/trash.png';
+import backspace from '@assets/backspace.png';
 import { color } from '@style/variables';
 
 const DATA = [
@@ -162,7 +162,7 @@ export default function Pin({ backgroundColorStatusBar }){
                        data={DATA}
                        renderItem={({ item, index }) => (
                         <View style={{margin: 10}}>
-                            <Button image={item?.image ? item?.image : false } widthIcon="22" heightIcon="22" onPress={e => pushPin(item.title)}>
+                            <Button image={item?.image ? item?.image : false } widthIcon={22} heightIcon={22} onPress={e => pushPin(item.title)}>
                                 {item?.image ? null : item.title }
                             </Button>
                         </View>
